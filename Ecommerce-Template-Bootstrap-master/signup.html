@@ -26,7 +26,7 @@
  
     
     <!-- Default form register -->
-<form class="text-center border border-light p-5" id="a"  action="#!">
+<form class="text-center border border-light p-5"  name="reg" id="a"  action="#!"  onsubmit="signup()" >
 
     <p class="h4 mb-4">Sign up</p>
 
@@ -37,7 +37,7 @@
     <div class="form-row mb-4">
         <div class="col">
             <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+            <input type="text" name="fname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
         </div>
         <div class="col">
             <!-- Last name -->
@@ -86,9 +86,14 @@
 
 </form>
 <!-- Default form register -->
+
+
+
+
     
 </body>
 <!-- Default form login -->
+<script type="text/javascript" src="./sign.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
