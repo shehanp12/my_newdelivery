@@ -19,7 +19,7 @@ auth.createUserWithEmailAndPassword(email,password).then(cred=>{
 
 const logout=document.querySelector('#we');
 logout.addEventListener('click',(e)=>{
-  e.preventDefault();
+ e.preventDefault();
   auth.signOut.then(()=>{
     console.log('user signed out');
   }); 
