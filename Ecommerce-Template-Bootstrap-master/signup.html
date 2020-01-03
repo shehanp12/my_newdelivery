@@ -26,9 +26,9 @@
  
     
     <!-- Default form register -->
-<form class="text-center border border-light p-5"  name="reg" id="a"  action="#!"  onsubmit="signup()" >
+<form class="text-center border border-light p-5"  name="reg" id="a"    >
 
-    <p class="h4 mb-4">Sign up</p>
+    <p class="h4 mb-4">Signup/Login</p>
 
     
 
@@ -67,8 +67,11 @@
     </div>
 
     <!-- Sign up button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+   <form form class="text-center border border-light p-5"  name="reg" id="a">
+    <button class="btn btn-info my-4 btn-block"   type="submit">SignIn</button>
 
+
+    
     <!-- Social register -->
     <p>or sign up with:</p>
 
@@ -83,9 +86,48 @@
     <p>By clicking
         <em>Sign up</em> you agree to our
         <a href="" target="_blank">terms of service</a>
+   </form>
 
-</form>
+
+   
+
+    
+
+
+        <form  class="text-center border border-light p-5"   id="we">
+            <button class="btn btn-info my-4 btn-block" type="button" >SinOut</button>
+           </form>
+           
+
 <!-- Default form register -->
+
+<!-- Default form login -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDM595eUaA7jbvlrrCdi920LUOTa-30t80",
+    authDomain: "coffeeshop-4cf38.firebaseapp.com",
+    databaseURL: "https://coffeeshop-4cf38.firebaseio.com",
+    projectId: "coffeeshop-4cf38",
+    storageBucket: "coffeeshop-4cf38.appspot.com",
+    messagingSenderId: "966275901816",
+    appId: "1:966275901816:web:65ee85b80fc456d3ad008d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+
+  const auth=firebase.auth();
+  const db=firebase.firestore();
+</script>
 
 
 
@@ -93,7 +135,7 @@
     
 </body>
 <!-- Default form login -->
-<script type="text/javascript" src="./sign.js"></script>
+<script type="text/javascript" src="./signup.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
