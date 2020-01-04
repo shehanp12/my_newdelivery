@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
 </head>
 <body >
     <!-- Default form login -->
@@ -21,18 +22,61 @@
            
         }
 
-        form{
-            background-image: url("https://scdn.slashgear.com/wp-content/uploads/2019/07/coffee_main_envat-1280x720.jpg")
-        
+        body{
+           margin: 0;
+           padding: 0;
+           background: url("https://www.thespruceeats.com/thmb/FqAmlu75_bsSbgw5i2rT3rnqad4=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/AutumnChaiSwizzle-155417888-56a172bc5f9b58b7d0bf5fec.jpg");
+          
+           background-size: cover;
+           background-repeat: no-repeat;
+          
+           font-family: sans-serif;
+       }
+        .loginbox
+        {
+            width: 320;
+            height: 420;
+            background: #000000;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px-30px;
 
         }
-        
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 49%;
+            position: absolute;
+            top:-50px;
+            left: calc(50% -50%) ;
+        }
+        .h4{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: :center;
+            font-size: 22px;
+        }
+        .abcd{
+            border: none;
+            outline: none;
+            height:40px;
+            background: #FF0000;
+            color: #fff;
+            font-size: 18px;
+           
+
+        }
     
     
     </style>
     <center>
-        <form class="text-center border border-light p-5" id="c" >
-
+       <div class="loginbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyQFYkNyi06cMxHugpt98KYkdqGetOeiekrGKh5DwS5xaHa1m&s" class="avatar">
+          <form class=form1 id="c" >
             <p class="h4 mb-4">Sign in</p>
         
             <!-- Email -->
@@ -56,22 +100,16 @@
             </div>
         
             <!-- Sign in button -->
-            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+            <button class="abcd" type="submit">Sign in</button>
         
             <!-- Register -->
             <p><b>Not a member?
                 <a href="">Register</a></b>
             </p>
         
-            <!-- Social login -->
-            <p><b>or sign in with:</b></p>
-        
-            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
-        
+            
         </form>
+    </div>
     </center>
 
 
