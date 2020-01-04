@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 
 </head>
 <body >
@@ -57,8 +60,8 @@
         .h4{
             margin: 0;
             padding: 0 0 20px;
-            text-align: :center;
-            font-size: 22px;
+           /* text-align: :center;
+            font-size: 22px;*/
         }
         .abcd{
             border: none;
@@ -70,49 +73,83 @@
            
 
         }
-    
+     #c{
+         width: 500px;
+     }
+    #defaultLoginFormEmail{
+        width: 400px;
+     
+    }
+    #defaultLoginFormPassword{
+        width: 400px;
+    }
     
     </style>
     <center>
        <div class="loginbox">
+           <center>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyQFYkNyi06cMxHugpt98KYkdqGetOeiekrGKh5DwS5xaHa1m&s" class="avatar">
-          <form class=form1 id="c" >
+           </center>
+            <form class=form1 id="c" >
             <p class="h4 mb-4">Sign in</p>
         
             <!-- Email -->
+            <center>
             <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-        
+        </center>
             <!-- Password -->
+            <center>
             <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-        
+            </center>
             <div class="d-flex justify-content-around">
                 <div>
                     <!-- Remember me -->
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                        <label class="custom-control-label" for="defaultLoginFormRemember"><b>Remember me</b></label>
-                    </div>
+              
                 </div>
                 <div>
                     <!-- Forgot password -->
                     <a href=""><b>Forgot password?</b></a>
                 </div>
             </div>
-        
+        <br>
             <!-- Sign in button -->
             <button class="abcd" type="submit">Sign in</button>
         
             <!-- Register -->
+            <br>
             <p><b>Not a member?
-                <a href="">Register</a></b>
+                <a href="./signup.html">Register</a></b>
             </p>
         
             
         </form>
+        
+        Want To log out?<br><a href="#" class="grey-text" id="logout">Logout</a>
     </div>
     </center>
 
+    
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDM595eUaA7jbvlrrCdi920LUOTa-30t80",
+    authDomain: "coffeeshop-4cf38.firebaseapp.com",
+    databaseURL: "https://coffeeshop-4cf38.firebaseio.com",
+    projectId: "coffeeshop-4cf38",
+    storageBucket: "coffeeshop-4cf38.appspot.com",
+    messagingSenderId: "966275901816",
+    appId: "1:966275901816:web:65ee85b80fc456d3ad008d"
+  };
+  // Initialize Firebase
 
+  
+  firebase.initializeApp(firebaseConfig);
+  const auth=firebase.auth();
+  const db=firebase.firestore();
+
+  </script>
+
+<script type="text/javascript" src="./signup.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>

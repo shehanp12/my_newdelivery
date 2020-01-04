@@ -1,4 +1,5 @@
 //signup form
+/*
 const signupForm =document.querySelector('#a');
 signupForm.addEventListener('submit',(e)=>{
 e.preventDefault();
@@ -16,20 +17,20 @@ auth.createUserWithEmailAndPassword(email,password).then(cred=>{
    
 }); 
 });
-
-const logout=document.querySelector('#we');
-logout.addEventListener('click',(e)=>{
- e.preventDefault();
-  auth.signOut.then(()=>{
+*/
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+  e.preventDefault();
+  auth.signOut().then(() => {
     console.log('user signed out');
-  }); 
-}); 
-
+  })
+});
 //siginInForm
 
 const loginForm =document.querySelector('#c');
 loginForm.addEventListener('submit',(e)=>{
 e.preventDefault();
+
 
 
 //get user infor
