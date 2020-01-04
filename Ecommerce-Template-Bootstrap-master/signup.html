@@ -89,6 +89,7 @@
           
 
         }
+       
      
      
      </style>
@@ -96,7 +97,11 @@
     
     <!-- Default form register -->
     <center>
+<<<<<<< HEAD
 <form class="text-center border border-light p-5"  name="reg" id="a"  method="post" onsubmit="return checkForm()">
+=======
+<form class="text-center border border-light p-5"  name="reg" id="a">
+>>>>>>> b3f7dc34b5c9a554c1629f7a8502259911a14204
 
     <p class="h4 mb-4">Signup/Login</p>
 
@@ -111,21 +116,25 @@
         </div>
         <div class="col">
             <!-- Last name -->
+<<<<<<< HEAD
             <input type="text" name="lastname" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" >
+=======
+            <input type="text" name="lname"  id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+>>>>>>> b3f7dc34b5c9a554c1629f7a8502259911a14204
         </div>
     </div>
 
     <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
 
     <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <input type="password" name="pass" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4"><b>
         At least 8 characters and 1 digit</b>
     </small>
 
     <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+    <input type="text" name="phone" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
     <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4"><b>
         Optional - for two step authentication</b>
     </small>
@@ -144,7 +153,7 @@
     
    
 
-<a href="#"  id="we">LogOut</a>    
+   
 </form>
 </center>     
 
@@ -158,7 +167,7 @@
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
+<!--
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -173,7 +182,20 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-
+-->
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCwRwTX7fCIYr4OOpETBbuZT7bThqZOUmY",
+      authDomain: "deliveryapp-17c9b.firebaseapp.com",
+      databaseURL: "https://deliveryapp-17c9b.firebaseio.com",
+      projectId: "deliveryapp-17c9b",
+      storageBucket: "deliveryapp-17c9b.appspot.com",
+      messagingSenderId: "139485138633",
+      appId: "1:139485138633:web:fc5d86d8732aa2ebbec718"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
   const auth=firebase.auth();
   const db=firebase.firestore();
 </script>
@@ -184,7 +206,8 @@
     
 </body>
 <!-- Default form login -->
-<script type="text/javascript" src="./signup.js"></script>
+<script type="text/javascript" src="./saveData.js"></script>
+
 <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
