@@ -10,6 +10,48 @@
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
 <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
 
+<script language="javascript"type="text/javascript">
+ function validation(){
+
+    var email = document.form["login"]["email"];
+    var password = document.form["login"]["password"];
+    var agree = document.form["login"]["agree"];
+
+    // validation fails if the input is blank
+    if(  email== "" ||  password== "" || agree== "" || ) 
+    {
+      window.alert("Error: Input is empty!");
+      return ;
+    }
+
+    // validate email 
+  if (!email.includes("@",".")) 
+  {
+      window.alert("Not a valid e-mail address");
+      return false;
+  }  
+
+  
+  //validate password confirmation
+    if(Document.form.password.value.length<8)
+    {
+      window.alert("password should be more than 8 characters ");
+      return false;
+     }
+
+     if(form.checkbox.checked) {
+      alert("The checkbox IS checked");
+    } else {
+      alert("The checkbox IS NOT checked");
+    }
+    return false;
+    }
+
+    return true;
+ };
+
+
+</script>   
 </head>
 <body >
     <!-- Default form login -->
@@ -76,7 +118,8 @@
     <center>
        <div class="loginbox">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyQFYkNyi06cMxHugpt98KYkdqGetOeiekrGKh5DwS5xaHa1m&s" class="avatar">
-          <form class=form1 id="c" >
+
+          <form class=form1 id="c" name="login" onsubmit="return validation()">
             <p class="h4 mb-4">Sign in</p>
         
             <!-- Email -->
