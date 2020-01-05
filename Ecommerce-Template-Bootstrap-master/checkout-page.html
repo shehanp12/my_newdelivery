@@ -113,10 +113,7 @@
                 <div class="col-md-6 mb-2">
 
                   <!--firstName-->
-                  <div class="md-form ">
-                    <input type="text" id="firstName" class="form-control">
-                    <label for="firstName" class="">First name</label>
-                  </div>
+                 
 
                 </div>
                 <!--Grid column-->
@@ -125,11 +122,7 @@
                 <div class="col-md-6 mb-2">
 
                   <!--lastName-->
-                  <div class="md-form">
-                    <input type="text" id="lastName" class="form-control">
-                    <label for="lastName" class="">Last name</label>
-                  </div>
-
+                 
                 </div>
                 <!--Grid column-->
 
@@ -141,15 +134,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
-                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control py-0" placeholder="Person's name who waiting for delivery" aria-describedby="basic-addon1">
               </div>
 
-              <!--email-->
-              <div class="md-form mb-5">
-                <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
-                <label for="email" class="">Email (optional)</label>
-              </div>
-
+            
               <!--address-->
               <div class="md-form mb-5">
                 <input type="text" id="address" class="form-control" placeholder="1234 Main St">
@@ -168,13 +156,15 @@
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-12 mb-4">
 
-                  <label for="country">Country</label>
-                  <select class="custom-select d-block w-100" id="country" required>
+                  <label for="District">District</label>
+                  <select class="custom-select d-block w-100" id="District" required>
                     <option value="">Choose...</option>
-                    <option>United States</option>
+                    <option>Colombo</option>
+                    <option>Gampha</option>
+                    <option>Kaluthara</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid country.
+                    Please select a District.
                   </div>
 
                 </div>
@@ -184,10 +174,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
 
                   <label for="state">State</label>
-                  <select class="custom-select d-block w-100" id="state" required>
-                    <option value="">Choose...</option>
-                    <option>California</option>
-                  </select>
+                 <input type="text" name="state"
                   <div class="invalid-feedback">
                     Please provide a valid state.
                   </div>
