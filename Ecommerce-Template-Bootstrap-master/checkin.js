@@ -1,33 +1,12 @@
+function getValues(){
 
-function checkoutCart(){
-  var items = localStorage.getItem("itemArray");
-  var itemsObj = [];
-  if (items != null) {
-      itemsObj = JSON.parse(items);
-  }    
-  console.log(itemsObj);
-
- 
+    var itemArray=["white mocha"];
+  const a= localStorage.getItem(itemArray);
 
 
-document.getElementById('oi').innerHTML=items;
+   document.getElementById('oi').innerHTML=a;
 
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
