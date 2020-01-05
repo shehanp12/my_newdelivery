@@ -87,114 +87,172 @@
   </nav>
   <!-- Navbar -->
 
-  <!--Main layout-->
-  <main class="mt-5 pt-4">
-    <div class="container wow fadeIn">
+  <style>
+    .table{
+      margin: 100px;
+      border: yellow;
+      border: 50px;
+    }
+  </style>
+<table style="width: 100%;">
+  <tr>
+    <td style="width:70%">
+      <!--Main layout-->
+     
 
-      <!-- Heading -->
-      <h2 class="my-5 h2 text-center">Checkout form</h2>
-
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-8 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card content-->
-            <form class="card-body">
-
-              <!--Grid row-->
-              <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-2">
-
-                  <!--firstName-->
-                 
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-2">
-
-                  <!--lastName-->
-                 
-                </div>
-                <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Username-->
-              <div class="md-form input-group pl-0 mb-5">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">@</span>
-                </div>
-                <input type="text" class="form-control py-0" placeholder="Person's name who waiting for delivery" aria-describedby="basic-addon1">
-              </div>
-
-            
-              <!--address-->
-              <div class="md-form mb-5">
-                <input type="text" id="address" class="form-control" placeholder="1234 Main St">
-                <label for="address" class="">Address</label>
-              </div>
-
-              <!--address-2-->
-              <div class="md-form mb-5">
-                <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
-                <label for="address-2" class="">Address 2 (optional)</label>
-              </div>
-
-              <!--Grid row-->
-              <div class="row">
-
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-12 mb-4">
-
-                  <label for="District">District</label>
-                  <select class="custom-select d-block w-100" id="District" required>
-                    <option value="">Choose...</option>
-                    <option>Colombo</option>
-                    <option>Gampha</option>
-                    <option>Kaluthara</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a District.
+  
+      <main class="mt-5 pt-4">
+        <div class="container wow fadeIn">
+    
+          <!-- Heading -->
+          <h2 class="my-5 h2 text-center">Checkout form</h2>
+    
+          <!--Grid row-->
+          <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-8 mb-4">
+    
+              <!--Card-->
+              <div class="card">
+    
+                <!--Card content-->
+                <form class="card-body">
+    
+                  <!--Grid row-->
+                  <div class="row">
+    
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-2">
+    
+                      <!--firstName-->
+                     
+    
+                    </div>
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-2">
+    
+                      <!--lastName-->
+                     
+                    </div>
+                    <!--Grid column-->
+    
                   </div>
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                  <label for="state">State</label>
-                 <input type="text" name="state"
-                  <div class="invalid-feedback">
-                    Please provide a valid state.
+                  <!--Grid row-->
+    
+                  <!--Username-->
+                  <div class="md-form input-group pl-0 mb-5">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control py-0" placeholder="Person's name who waiting for delivery" aria-describedby="basic-addon1">
                   </div>
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                  <label for="zip">Zip</label>
-                  <input type="text" class="form-control" id="zip" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Zip code required.
+    
+                
+                  <!--address-->
+                  <div class="md-form mb-5">
+                    <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+                    <label for="address" class="">Address</label>
                   </div>
+    
+                  <!--address-2-->
+                  <div class="md-form mb-5">
+                    <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
+                    <label for="address-2" class="">Address 2 (optional)</label>
+                  </div>
+    
+                  <!--Grid row-->
+                  <div class="row">
+    
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+    
+                      <label for="District">District</label>
+                      <select class="custom-select d-block w-100" id="District" required>
+                        <option value="">Choose...</option>
+                        <option>Colombo</option>
+                        <option>Gampha</option>
+                        <option>Kaluthara</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a District.
+                      </div>
+    
+                    </div>
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+    
+                      <label for="state">State</label>
+                     <input type="text" name="state"
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+    
+                    </div>
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+    
+                      <label for="zip">Zip</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+    
+                    </div>
+                    <!--Grid column-->
+    
+                  </div></td>
+                  <td style="width: 30%;">   
+                  
+<center>  <!-- Heading -->
+  <h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Your cart</span>
+    <span class="badge badge-secondary badge-pill">3</span>
+  </h4> <ul class="list-group mb-3 z-depth-1">
+<li class="list-group-item d-flex justify-content-between lh-condensed">
+  <div>
+    <h6 class="my-0">Product name</h6>
+    <small class="text-muted">Brief description</small>
+  </div>
+  <span class="text-muted">$12</span>
+</li>
+<li class="list-group-item d-flex justify-content-between lh-condensed">
+  <div>
+    <h6 class="my-0">Second product</h6>
+    <small class="text-muted">Brief description</small>
+  </div>
+  <span class="text-muted">$8</span>
+</li>
+<li class="list-group-item d-flex justify-content-between lh-condensed">
+  <div>
+    <h6 class="my-0">Third item</h6>
+    <small class="text-muted">Brief description</small>
+  </div>
+  <span class="text-muted">$5</span>
+</li>
+<li class="list-group-item d-flex justify-content-between bg-light">
+  <div class="text-success">
+    <h6 class="my-0">Promo code</h6>
+    <small>EXAMPLECODE</small>
+  </div>
+  <span class="text-success">-$5</span>
+</li>
+<li class="list-group-item d-flex justify-content-between">
+  <span>Total (USD)</span>
+  <strong>$20</strong>
+</li>
+</ul></td></center>
+                    
+  </tr>
 
-                </div>
-                <!--Grid column-->
-
-              </div>
+</table>
+  
               <!--Grid row-->
 
               <hr>
@@ -269,49 +327,10 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-4 mb-4">
-
-          <!-- Heading -->
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-muted">Your cart</span>
-            <span class="badge badge-secondary badge-pill">3</span>
-          </h4>
+       
 
           <!-- Cart -->
-          <ul class="list-group mb-3 z-depth-1">
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Second product</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Third item</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between bg-light">
-              <div class="text-success">
-                <h6 class="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
-              </div>
-              <span class="text-success">-$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$20</strong>
-            </li>
-          </ul>
+      
           <!-- Cart -->
 
           <!-- Promo code -->
