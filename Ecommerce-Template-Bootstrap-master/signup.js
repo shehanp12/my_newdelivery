@@ -1,68 +1,53 @@
 //signup form
-/*
-const signupForm =document.querySelector('#a');
+
+const signupForm =document.querySelector('#signup-form');
 signupForm.addEventListener('submit',(e)=>{
 e.preventDefault();
 
 
 //get user infor
-const email= signupForm['defaultRegisterFormEmail'].value;
-const password=signupForm['defaultRegisterFormPassword'].value;
+
+const email= signupForm['orangeForm-email'].value;
+const password=signupForm['orangeForm-pass'].value;
 
 auth.createUserWithEmailAndPassword(email,password).then(cred=>{
     console.log(cred.user);
   signupForm.reset();
   
-
-   
+ 
 }); 
 });
-*/
-const logout = document.querySelector('#logout');
-logout.addEventListener('click', (e) => {
-  e.preventDefault();
-  auth.signOut().then(() => {
-    console.log('user signed out');
-  })
-});
-//siginInForm
 
-const loginForm =document.querySelector('#c');
+
+
+
+
+
+const loginForm =document.querySelector('#login-form');
 loginForm.addEventListener('submit',(e)=>{
-e.preventDefault();
+    e.preventDefault();
 
+    const email=loginForm['defaultForm-email'].value;
+    const password=loginForm['defaultForm-pass'].value;
 
-
-//get user infor
-const email= loginForm['defaultLoginFormEmail'].value;
-const password=loginForm['defaultLoginFormPassword'].value;
-
-auth.createUserWithEmailAndPassword(email,password).then(cred=>{
-    console.log(cred.user);
-    loginForm.reset();
-  
-  
-
+    auth.signInWithEmailAndPassword(email,password).then(cred =>{
+      console.log(cred.user);
+               
+      loginForm.reset();
    
-}); 
+    })
+
+})
+
+
+
+const logout=document.querySelector('#logout');
+logout.addEventListener('click',(e)=>{
+    e.preventDefault();
+    auth.signOut().then(()=>{
+           console.log('user signed out');
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

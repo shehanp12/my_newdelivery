@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Delivey App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
   <link rel="icon" href="https://image.freepik.com/free-vector/coffee-fast-delivery-service-advertising-banner_82574-8758.jpg">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -15,6 +17,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
   <style type="text/css">
     html,
@@ -44,6 +47,7 @@
       }
     }
 
+    
   </style>
 </head>
 
@@ -75,23 +79,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="./login.html" target="_blank">Login</a>
+            <a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>
           </li>
-         
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="signup.html"
-              target="_blank">SignUp</a>
+            <a class="nav-link waves-effect" href="#"  data-toggle="modal" id="logout">Logout</a>
           </li>
-          
+        
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#"
+            data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>
+          </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> 1 </span>
-              <i class="fas fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+          
+             <div class="cart-btn">
+              <li class="nav-item">
+                <a class="nav-link waves-effect">
+                  <span class="badge red z-depth-1 mr-1" id="a"> 0 </span>
+                
+                  <i class="fas fa-shopping-cart"></i>Cart
+             </div>
             </a>
           </li>
           <li class="nav-item">
@@ -304,361 +313,19 @@
       </nav>
       <!--/.Navbar-->
 
-      <!--Section: Products v.3-->
-      <section class="text-center mb-4">
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://i.pinimg.com/originals/98/b2/c9/98b2c9c87d7b6b1329a39bcf91f55219.jpg" height="300" width="50"  class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>ICED Beverages</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('iced iate',450)" class="dark-grey-text"> Iced Iate
-                      <span class="badge badge-pill danger-color">NEW</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.450</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
+     
+              <!--Card-->
+              <div class="products-center">
+                         
+         
 
             </div>
+
+          
             <!--Card-->
 
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://www.lifeisbetterwithtea.com/wp-content/uploads/2017/01/ginger_lemon_black_tea-1.jpg"  height="300" width="50" class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="./checkout-page.html" class="grey-text">
-                  <h5>TEA BEVERAGES</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('lemontea',350)" class="dark-grey-text">Lemon Tea</a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.350</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://jerryjamesstone.com/wp-content/uploads/2016/08/Chocolate-Tea-Iced-Latte-Vegan-2.jpg"  height="300" width="50" class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="./checkout-page.html" class="grey-text">
-                  <h5>ICED Beverages</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('chocoalte',550) class="dark-grey-text"></a>Chocolate
-                      <span class="badge badge-pill primary-color">bestseller</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.550</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Fourth column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://globalassets.starbucks.com/assets/02e313dd98204b7380730e96f8d50c38.jpg" height="300" width="50" class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="./checkout-page.html" class="grey-text"  onclick="myJsFunc5();"></a>
-                  <h5>ESPRESSO</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('cafe americano',270)"  class="dark-grey-text">Cafe Americano</a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.270</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Fourth column-->
-
         </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://images.unsplash.com/photo-1530373239216-42518e6b4063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" height="300" width="50" class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5> ICED Beverages</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('iced mocca',400)"   class="dark-grey-text">ICED Mocca
-                      <span class="badge badge-pill danger-color">NEW</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.400</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="http://www.nutrizonia.com/wp-content/uploads/2017/06/Green-Apples-with-Ginger-Hibiscus-Iced-Tea-2.jpg" height="300" width="50" class="card-img-top"
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5> TEA BEVERAGES</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('Apple Tea',350)"   class="dark-grey-text">Apple Tea</a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.350</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Cappuccino-Creme-brulee.jpg" height="300" width="50" class="card-img-top" 
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Cappuccino</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('Cappuccino',400)"   class="dark-grey-text">Cappuccino
-                      <span class="badge badge-pill primary-color">bestseller</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.400</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Fourth column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://aglantzia.route66cafe.com.cy/wp-content/uploads/2017/09/White-Mocha.jpg" height="300" width="50" class="card-img-top" 
-                  alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>ESPRESSO</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="javascript:myJsFunc('white mocha',500)"   class="dark-grey-text">White Mocha</a>
-                  
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>Rs.500</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Fourth column-->
-
-        </div>
-        <!--Grid row-->
-
-      </section>
-      <!--Section: Products v.3-->
-
       <!--Pagination-->
       <nav class="d-flex justify-content-center wow fadeIn">
         <ul class="pagination pg-blue">
@@ -702,6 +369,43 @@
     </div>
   </main>
   <!--Main layout-->
+
+    <!--cart-->
+   <div class="cart-overlay">
+     <div class="cart">
+       <span class="close-cart">
+         <i class="fas fa-window-close"></i>
+       </span>
+<h2>Your cart</h2>
+<div class="class-content">
+  <!--cart item-->
+  <!-- <div class="cart-item">
+
+  </div> -->
+</div>
+<div class="cart-footer">
+  <h3>Your total:Rs.<span class="cart-total">0</span></h3>
+  <button class="clear-cart btn btn-primary" id="clear-cart">Clear Cart</button>
+  <button class="clear-cart btn btn-primary" id="check"  onclick="window.location.href ='http://127.0.0.1:5501/Ecommerce-Template-Bootstrap-master/checkout-page.html';"> Move to the checkout </button>
+  
+   
+   
+ 
+</div>
+     </div>
+   </div>
+   
+  <!--end of cart item-->
+</div>
+
+
+  </div>
+
+<!--cart-->
+
+     </div>
+   </div>
+
 
   <!--Footer-->
  
@@ -761,8 +465,16 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  
 
+  <script src="./index.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./cart.js"></script>
   <script type="text/javascript" src="./checkout.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -777,6 +489,111 @@
     new WOW().init();
 
   </script>
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- signup -->
+      
+        <div class="modal-body mx-3">
+          <form id="signup-form">
+            <div class="input-field">
+                      <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+            <input type="text" id="orangeForm-name" name="fname" class="form-control validate">
+           
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+            <input type="email" id="orangeForm-email" name="email" class="form-control validate">          
+          </div>
+  
+          <div class="input-field">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+            <input type="password" id="orangeForm-pass" name="pass" class="form-control validate">         
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange">Sign up</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+    </div>
+      <!-- End -->
+
+      
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="login-form">
+        <div class="input-field">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+       
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </form>
+    </div>
+  </div>
+  </div>
+  
+  
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCwRwTX7fCIYr4OOpETBbuZT7bThqZOUmY",
+    authDomain: "deliveryapp-17c9b.firebaseapp.com",
+    databaseURL: "https://deliveryapp-17c9b.firebaseio.com",
+    projectId: "deliveryapp-17c9b",
+    storageBucket: "deliveryapp-17c9b.appspot.com",
+    messagingSenderId: "139485138633",
+    appId: "1:139485138633:web:fc5d86d8732aa2ebbec718"
+  };
+  // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+const auth=firebase.auth();
+const db=firebase.firestore();
+
+</script>
+<script src="signup.js"></script>
+<script src="jason.js"></script>
+<script  src="aa.json></script>
 </body>
 
 </html>
