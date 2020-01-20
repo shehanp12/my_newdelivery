@@ -25,6 +25,7 @@ auth.createUserWithEmailAndPassword(email,password).then(cred=>{
 
 const loginForm =document.querySelector('#login-form');
 loginForm.addEventListener('submit',(e)=>{
+  
     e.preventDefault();
 
     const email=loginForm['defaultForm-email'].value;
@@ -32,6 +33,7 @@ loginForm.addEventListener('submit',(e)=>{
 
     auth.signInWithEmailAndPassword(email,password).then(cred =>{
       console.log(cred.user);
+
                
       loginForm.reset();
    
